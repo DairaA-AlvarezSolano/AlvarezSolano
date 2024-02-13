@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height:   1.6;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    box-shadow:   0   2px   4px rgba(0,   0,   0,   0.1); /* Sombra debajo de la barra de navegación */
+}
+
+.jumbotron {
+    margin-top: 50px;
+    background-color: #007bff; /* Color de fondo para el encabezado */
+    margin-bottom:   0; /* Sin margen inferior para el encabezado */
+    margin-left: 205px;
+    margin-right: 205px;
+}
+
+.content-section {
+    margin-bottom:   2rem; /* Espaciado entre secciones */
+    border-radius:   1rem; /* Bordes redondeados */
+    box-shadow:   0   0.5rem   1rem rgba(0,   0,   0,   0.15); /* Sombra para dar profundidad */
+    transition: transform   0.3s ease-in-out; /* Transición suave al pasar el cursor */
+}
+
+.content-section:hover {
+    transform: translateY(-0.25rem); /* Efecto de elevación al pasar el cursor */
+}
+
+.my-5 {
+    margin-top:   3rem !important; /* Espaciado superior para el contenido principal */
+    margin-bottom:   3rem !important; /* Espaciado inferior para el contenido principal */
+}
+
+/* Estilos adicionales para mejorar la apariencia y funcionalidad */
+/* AQUÍ EMPIEZA  */
+/* ... (tus estilos existentes) ... */
+
+/* Estilos para los carruseles */
+.carousel {
+    width:  300px; /* Ancho del carrusel */
+    margin:  0 auto; /* Centrado horizontal */
+    margin-bottom:  1.5rem; /* Espaciado entre carruseles */
+}
+
+.carousel-item img {
+    height:  200px; /* Altura de las imágenes del carrusel */
+    object-fit: cover; /* Asegura que las imágenes cubran todo el espacio disponible */
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom:  20px;
+    left:  50%;
+    transform: translateX(-50%);
+    width:  80%;
+    text-align: center;
+    background-color: rgba(0,  0,  0,  0.5); /* Fondo semi-transparente para la leyenda */
+    color: white; /* Texto blanco para la leyenda */
+}
+
+/* ... (más estilos personalizados según sea necesario) ... */
