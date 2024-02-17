@@ -1,1 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Daira Álvarez">
+    <meta name="description" content="Página personal Daira Aketzalli Álvarez Solano">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Personal</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+    <!-- Bootstrap -->
+    <!-- Enlaza Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Redes de Datos Seguras</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="personal.html">Página personal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina2.html">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pagina3.html">Horario escolar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+        <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+            <img class="hero-imagen-desarrollador rounded-circle" src="img/yo.jpg"
+                alt="Foto de Jane Doe">
+            <h1>Hola, soy Daira Aketzalli</h1>
+            <!--Animación con JavaScript-->
+            <h2 class="text-primary mb-4" id="typewriter"></h2>
+        </div>
+        <div class="hero-inferior">
+        </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+        <div class="contenedor">
+            <h2 class="seccion-titulo">Conóceme</h2>
+            <p class="seccion-texto">¡Hola! Soy Daira, una persona que aprecia la calma y la sencillez en la vida. Me
+                atraen los momentos tranquilos y el contacto con la naturaleza, y encuentro inspiración en las pequeñas
+                cosas que la vida nos ofrece. Mi objetivo es llevar un estilo de vida equilibrado, donde cada día es una
+                oportunidad para aprender y crecer, y donde cada experiencia se disfruta con plenitud.</p>
+        </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+        <div class="container text-center">
+            <div class="row">
+                <!-- Hobbies -->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-laptop"></i>
+                    <p class="experiencia-titulo">Hobbies</p>
+                    <p>Aunque no tengo muchos hobbies constantes, me gusta mantenerme abierta a nuevas experiencias y
+                        actividades. Me agrada la diversidad y la oportunidad de aprender algo nuevo cada día. Aunque no
+                        me comprometo con un solo hobby, me gusta explorar diferentes caminos y ver qué me atrae. </p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">Música</span>
+                        <span class="badge text-bg-primary">Conciertos</span>
+                        <span class="badge text-bg-primary">Leer</span>
+                        <span class="badge text-bg-primary">Viajar</span>
+                        <span class="badge text-bg-primary">Jugar</span>
+                    </div>
+                </div>
+                <!-- Películas -->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-laptop"></i>
+                    <p class="experiencia-titulo">Películas</p>
+                    <p>No me gusta limitarme a un solo género, en cambio, disfruto descubriendo nuevas películas sin
+                        tener en cuenta su clasificación. Si el trailer de una película me atrae, es probable que decida
+                        verla. Una excepción a esta regla es Disney, me gusta ver sus
+                        películas sin importar la trama.</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">Mulán</span>
+                        <span class="badge text-bg-primary">Olvidado</span>
+                    </div>
+                </div>
+                <!-- Música -->
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-laptop"></i>
+                    <p class="experiencia-titulo">Música</p>
+                    <p>Me apasiona la música pop en inglés y alternativa, me transportan a diferentes mundos y momentos.
+                        Cada canción o álbum que descubro me ofrece una nueva perspectiva y me conecta con emociones
+                        humanas diversas. En la imagen superior, verás a unos de mis artistas favoritos que han
+                        impactado significativamente en mi crecimiento.</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-primary">One direction</span>
+                        <span class="badge text-bg-primary">Alec Benjamin</span>
+                        <span class="badge text-bg-primary">AgustD</span>
+                        <span class="badge text-bg-primary">Coldplay</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Libros -->
+    <section id="testimonios" class="testimonios seccion-clara">
+        <h2 class="seccion-titulo">Libros</h2>
+        <h3 class="seccion-descripcion">En el ámbito de libros, tengo una lista de recomendaciones
+            que siempre estoy dispuesta a compartir.</h3>
+
+        <!-- Carrusel libros -->
+        <div id="gustos-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <img class="gustos-imagen rounded-circle" src="../AlvarezSolano_Project/img/almendra.png" alt="Almendra">
+                        <p class="gustos-texto">Yunjae nació con alexitimia, una condición que le dificulta reconocer y
+                            expresar emociones debido al desarrollo limitado de su amígdala cerebral. A pesar de los
+                            esfuerzos de su madre y abuela, sufre intimidación en la escuela. Tras un trágico ataque
+                            callejero en su decimosexto cumpleaños, su abuela fallece y su madre queda en estado
+                            vegetativo. Yunjae se ve obligado a vivir solo y hacerse autor de la librería familiar.</p>
+                        <div class="gustos-info">
+                            <p class="libro">Almendra</p>
+                            <p class="autor">Won-pyung Sohn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <img class="gustos-imagen rounded-circle" src="../AlvarezSolano_Project/img/bibliotecamedianoche.png"
+                            alt="Biblioteca de la media noche">
+                        <p class="gustos-texto">
+                            Nora Seed encuentra una Biblioteca de la Medianoche con estantes infinitos entre la vida y
+                            la muerte. Se le ofrece la oportunidad de vivir diferentes vidas y corregir sus elecciones.
+                            Marcada por la infelicidad y el arrepentimiento, busca la vida perfecta con la ayuda de una
+                            amiga. Sin embargo, las cosas no salen como esperaba, enfrentándola a un peligro extremo.
+                            Con el tiempo agotándose, Nora debe responder a la crucial pregunta de la mejor manera de
+                            vivir.</p>
+                        <div class="gustos-info">
+                            <p class="libro">Biblioteca de la medianoche</p>
+                            <p class="autor">Matt Haig</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <img class="gustos-imagen rounded-circle" src="../img/libranosdelmal.jpg"
+                            alt="Líbranos del mal">
+                        <p class="gustos-texto">La dualidad del bien y el mal, similar al yin y yang, se refleja en la
+                            vida de un estudiante de último año de preparatoria. Aunque aparenta ser común, oculta
+                            encuentros esporádicos con sombras y susurros que, inicialmente olvidables, toman
+                            relevancia. La búsqueda de consuelo y respuestas se intensifica cuando el mal se acerca,
+                            como demuestra el persistente seguimiento de un inquietante gato negro desde un sueño.</p>
+                        <div class="gustos-info">
+                            <p class="libro">Y líbranos del mal</p>
+                            <p class="autor">Mhavel N.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <img class="gustos-imagen rounded-circle" src="../img/jardindelasmariposas.png"
+                            alt="Jardin de las mariposas">
+                        <p class="gustos-texto">
+                            Cerca de una mansión aislada, un jardín alberga una colección de mariposas resguardada por
+                            el obsesionado Jardinero. Maya, una sobreviviente, enfrenta el trauma al relatar a los
+                            agentes del FBI los horrores vividos junto a otras jóvenes cautivas. Las pesadillas
+                            persisten en su memoria, y un tatuaje en su espalda simboliza un crimen imperdonable que
+                            nunca olvidará.</p>
+                        <div class="gustos-info">
+                            <p class="libro">El jardín de las mariposas</p>
+                            <p class="autor">Dot Hutchison</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#gustos-carrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#gustos-carrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <p class="footer-texto text-center">Fake it till you make it.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
