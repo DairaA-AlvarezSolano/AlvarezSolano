@@ -177,7 +177,7 @@ h1 {
 }
 
   /* Proyectos */
-  
+/*   
   .proyectos-recientes {
     padding: 40px;
   }
@@ -233,15 +233,15 @@ h1 {
     font-size: 60px;
     margin: 10px;
   }
+   */
   
+  /* libros */
   
-  /* Testimonios */
-  
-  .testimonios {
+  .libros {
     padding: 40px 40px 80px 40px;
   }
   
-  .testimonios .carousel {
+  .libros .carousel {
     max-width: 800px;
   }
   
@@ -305,58 +305,7 @@ h1 {
 
   }
   
-  /* Contacto */
-  
-  /* .contacto .container {
-    max-width: 1100px;
-    min-height: 200px;
-    padding: 20px;
-  }
-  
-  .contacto .rectangulo {
-    margin-top: -5rem;
-    background-color: rgb(13, 110, 253);
-    border-radius: 10px;
-    box-shadow: 0px 1px 4px 1px white;
-  }
-  
-  .contacto .row {
-    width: 100%;
-    display: flex;
-    align-items: center;
-  }
-  
-  .contacto .descripcion {
-    color: white;
-    font-size: 1.2rem;
-  }
-  
-  .contacto button {
-    color: white;
-    font-weight: bold;
-    background-color: transparent;
-    border: 2px solid white;
-    padding: 1.25em 2em;
-    margin: 10px;
-    border-radius: 100px;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .contacto button:hover {
-    background-color: white;
-    color: black;
-  }
-  
-  .contacto button i {
-    color: white;
-    font-size: 1.3rem;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .contacto button:hover i {
-    color: black;
-  } */
-  
+ 
   /* Pie de pagina (footer) */
   
   footer {
@@ -409,7 +358,43 @@ h1 {
     color: #aeaeae;
     padding: 20px;
   }
+
+  .cv-body{
+    background-color: yellow;
+    padding-left:10rem;
+    padding-right:10rem;
+
+  }
+
+  /* AQUÍ ESTOY HACIENDO PRUEBAS */
+  .left-column{
+    width:  25%; /* Ocupa  1/4 de la pantalla */
+    height:  100%;
+    background-color: red;
+  }
+  .right-column {
+    flex-grow:  1; /* Ocupa el espacio restante */
+    background-color: #e0e0e0; /* Color de fondo para visualizar la columna */
+}
+
+  .left-column .section{
+    height:  33.33%; /* Cada sección ocupa  1/3 de la altura total de la columna */
+    border-top:  10px solid #ccc;
+  }
+
+  .right-column .section{
+    height:  33.33%; /* Cada sección ocupa  1/3 de la altura total de la columna */
+    border-top:  1px solid #ccc;
+    padding: 50px;
+    border-left:  10px solid #007bff;
+
+  }
   
+  .container-cv{
+    display: flex;
+    height:   100%;    
+  }
+
   /* Adaptable (Responsivo) */
   
   @media screen and (max-width: 400px) {
