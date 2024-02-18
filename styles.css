@@ -371,16 +371,40 @@ h1 {
     width:  25%; /* Ocupa  1/4 de la pantalla */
     height:  100%;
     background-color: red;
+    display: block; /* Asegura que la imagen se trate como un bloque */
+    margin: auto; /* Centra la imagen horizontalmente */
   }
+
+  .left-column .section{
+    height:   33.33%; /* Cada sección ocupa   1/3 de la altura total de la columna */
+    border-bottom:   1px solid #ccc; /* Línea divisoria entre secciones */
+    display: flex; /* Hace que la sección sea un contenedor Flexbox */
+    align-items: center; /* Centra los elementos a lo largo del eje cruzado */
+    justify-content: center; /* Centra los elementos a lo largo del eje principal */
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+  }
+
+  .left-column img{
+    max-width:   90%; /* La imagen nunca será más ancha que su contenedor */
+    max-height:   90%; /* La imagen nunca será más alta que su contenedor */
+    object-fit: contain; /* Asegura que la imagen se ajuste dentro de su contenedor manteniendo su relación de aspecto */
+    display: block; /* Asegura que la imagen se trate como un bloque */
+    margin: auto; /* Centra la imagen horizontalmente */
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    border-radius: 5%;
+  }
+    
+
+
   .right-column {
     flex-grow:  1; /* Ocupa el espacio restante */
     background-color: #e0e0e0; /* Color de fondo para visualizar la columna */
 }
 
-  .left-column .section{
-    height:  33.33%; /* Cada sección ocupa  1/3 de la altura total de la columna */
-    border-top:  10px solid #ccc;
-  }
+
 
   .right-column .section{
     height:  33.33%; /* Cada sección ocupa  1/3 de la altura total de la columna */
@@ -389,7 +413,14 @@ h1 {
     border-left:  10px solid #007bff;
 
   }
-  
+
+  .section span{
+    margin-left: 8px;
+  }
+
+  .section a{
+    margin-left: 18px;
+  }
   .container-cv{
     display: flex;
     height:   100%;    
