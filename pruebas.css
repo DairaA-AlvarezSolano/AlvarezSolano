@@ -1,0 +1,46 @@
+/* Asegúrate de incluir este CSS en tu archivo de estilos o dentro de una etiqueta <style> en tu archivo HTML */
+
+/* Cambiar el color de fondo de la barra de navegación a un gradiente */
+.navbar {
+    background: linear-gradient(to right, #000000, #434343);
+}
+
+/* Cambiar el color del texto y los enlaces */
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+/* Agregar transiciones y efectos de hover */
+.navbar-nav .nav-link {
+    transition: color  0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #cccccc;
+}
+
+/* Ajustar el espaciado y la tipografía */
+.navbar-nav {
+    letter-spacing:  1px;
+}
+
+.navbar-brand {
+    font-size:  1.5rem;
+    font-weight: bold;
+}
+
+/* Agregar íconos a los enlaces (necesitarás incluir Bootstrap Icons en tu proyecto) */
+.navbar-nav .nav-link i {
+    margin-right:  5px;
+}
+
+/* Añadir margen a los elementos de la lista para aumentar el espacio entre los enlaces */
+.navbar-nav .nav-item {
+    margin-right:  15px; /* Ajusta este valor para aumentar o disminuir el espacio */
+}
+
+/* Asegúrate de que el último elemento no tenga margen a la derecha para evitar espacio extra al final */
+.navbar-nav .nav-item:last-child {
+    margin-right:  0;
+}
