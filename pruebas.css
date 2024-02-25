@@ -1,46 +1,123 @@
-/* Asegúrate de incluir este CSS en tu archivo de estilos o dentro de una etiqueta <style> en tu archivo HTML */
+.cv-body{
+    background-color: yellow;
+    padding-left:10rem;
+    padding-right:10rem;
 
-/* Cambiar el color de fondo de la barra de navegación a un gradiente */
-.navbar {
+  }
+  .navbar {
     background: linear-gradient(to right, #000000, #434343);
-}
-
-/* Cambiar el color del texto y los enlaces */
-.navbar-brand,
-.navbar-nav .nav-link {
+  }
+  
+  /* Cambiar el color del texto y los enlaces */
+  .navbar-brand,
+  .navbar-nav .nav-link {
     color: #ffffff;
-}
-
-/* Agregar transiciones y efectos de hover */
-.navbar-nav .nav-link {
-    transition: color  0.3s ease;
-}
-
-.navbar-nav .nav-link:hover {
+  }
+  
+  /* Agregar transiciones y efectos de hover */
+  .navbar-nav .nav-link {
+    transition: color   0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
     color: #cccccc;
-}
-
-/* Ajustar el espaciado y la tipografía */
-.navbar-nav {
-    letter-spacing:  1px;
-}
-
-.navbar-brand {
-    font-size:  1.5rem;
+  }
+  
+  /* Ajustar el espaciado y la tipografía */
+  .navbar-nav {
+    letter-spacing:   1px;
+  }
+  
+  .navbar-brand {
+    font-size:   1.5rem;
     font-weight: bold;
+  }
+  
+  /* Agregar íconos a los enlaces */
+  .navbar-nav .nav-link i {
+    margin-right:   5px;
+  }
+  
+  /* Añadir margen a los elementos de la lista para aumentar el espacio entre los enlaces */
+  .navbar-nav .nav-item {
+  margin-right:  15px; /* Ajusta este valor para aumentar o disminuir el espacio */
+  }
+  
+  /* Asegúrate de que el último elemento no tenga margen a la derecha para evitar espacio extra al final */
+  .navbar-nav .nav-item:last-child {
+  margin-right:  0;
+  }
+  .container-cv{
+    display: flex;
+    height:   100%;    
+  }
+  .carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+
+  /* AQUÍ ESTOY HACIENDO PRUEBAS */
+  .left-column{
+    width:  25%; /* Ocupa  1/4 de la pantalla */
+    height:  100%;
+    background-color: red;
+    display: block; /* Asegura que la imagen se trate como un bloque */
+    margin: auto; /* Centra la imagen horizontalmente */
+  }
+
+  .left-column .section{
+    height:   20.00%; /* FALTA AJUSTAR SEGÚN QUEDEN LAS SECCIONES*/
+    border-bottom:   1px solid #ccc; /* Línea divisoria entre secciones */
+    display: flex; /* Hace que la sección sea un contenedor Flexbox */
+    align-items: center; /* Centra los elementos a lo largo del eje cruzado */
+    justify-content: center; /* Centra los elementos a lo largo del eje principal */
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+  }
+
+  .left-column img{
+    max-width:   90%; /* La imagen nunca será más ancha que su contenedor */
+    max-height:   90%; /* La imagen nunca será más alta que su contenedor */
+    object-fit: contain; /* Asegura que la imagen se ajuste dentro de su contenedor manteniendo su relación de aspecto */
+    display: block; /* Asegura que la imagen se trate como un bloque */
+    margin: auto; /* Centra la imagen horizontalmente */
+    margin-top: 10px; 
+    margin-bottom: 10px;
+    border-radius: 5%;
+  }
+    
+
+
+  .right-column {
+    flex-grow:  1; /* Ocupa el espacio restante */
+    background-color: #e0e0e0; /* Color de fondo para visualizar la columna */
 }
 
-/* Agregar íconos a los enlaces (necesitarás incluir Bootstrap Icons en tu proyecto) */
-.navbar-nav .nav-link i {
-    margin-right:  5px;
-}
 
-/* Añadir margen a los elementos de la lista para aumentar el espacio entre los enlaces */
-.navbar-nav .nav-item {
-    margin-right:  15px; /* Ajusta este valor para aumentar o disminuir el espacio */
-}
 
-/* Asegúrate de que el último elemento no tenga margen a la derecha para evitar espacio extra al final */
-.navbar-nav .nav-item:last-child {
-    margin-right:  0;
-}
+  .right-column .section-principal{
+    height:  20.00%; /* FALTA AJUSTAR SEGÚN QUEDEN LAS SECCIONES */
+    border-bottom:  1px solid #ccc;
+    padding: 5px;
+    border-left:  5px solid #007bff;
+    background-color:#7ade30 ;
+  }
+  .right-column .section{
+    /* height:  10.00%; FALTA AJUSTAR SEGÚN QUEDEN LAS SECCIONES */
+    border-bottom:  1px solid #ccc;
+    padding: 5px;
+    border-left:  5px solid #007bff;
+    background-color:#7ade30 ;
+  }
+
+  .badges-contenedor {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+  }

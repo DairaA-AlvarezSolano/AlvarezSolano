@@ -131,7 +131,12 @@ h1 {
   .texto-blanco {
     color: white;
   }
-  
+
+  .seccion{
+    text-align: justify;
+    margin-bottom: 50px ;
+  }
+
   /* Seccion Hero */
   
   .hero {
@@ -149,11 +154,21 @@ h1 {
     height: 200px;
     margin: 20px;
   }
+
+  .rounded-square {
+    width:   200px; /* O cualquier tamaño que desees */
+    height:   200px; /* Debe ser igual al ancho para ser completamente circular */
+    border-radius:   10%; /* Hace que el elemento sea circular */
+    object-fit: cover; /* Asegura que la imagen cubra completamente el área circular sin distorsionarse */
+}
+
   
   .hero-principal h2 {
     font-size: 1.5rem;
     color: #615151;
   }
+
+
   
   /* Sobre mi */
   
@@ -218,69 +233,10 @@ h1 {
 }
 
 .medium-icon {
-  font-size:  2em; /* Ajusta este valor para cambiar el tamaño del icono */
+  font-size:  1.2em; /* Ajusta este valor para cambiar el tamaño del icono */
   color: black;
 }
 
-  /* Proyectos */
-/*   
-  .proyectos-recientes {
-    padding: 40px;
-  }
-  
-  .proyectos-recientes img {
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    display: block;
-    transition: all 0.2s ease;
-  }
-  
-  .proyectos-contenedor {
-    padding-top: 60px;
-    margin-bottom: 40px;
-  }
-  
-  .overlay {
-    transition: all 0.2s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  .overlay p {
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 0;
-  }
-  
-  .proyecto {
-    position: relative;
-  }
-  
-  .proyecto:hover img {
-    opacity: 0.2;
-  }
-  
-  .proyecto:hover .overlay {
-    opacity: 1;
-  }
-  
-  .overlay .iconos-contenedor {
-    display: flex;
-  }
-  
-  .overlay i {
-    color: black;
-    font-size: 60px;
-    margin: 10px;
-  }
-   */
-  
   /* libros */
   
   .libros {
@@ -317,8 +273,6 @@ h1 {
     height: 200px;
     width: 180px;
     margin: 10px 10px 20px 10px;
-
-
   }
   
   .gustos-texto {
@@ -429,6 +383,7 @@ h1 {
     justify-content: center; /* Centra los elementos a lo largo del eje principal */
     padding-top: 15px;
     padding-bottom: 15px;
+    align-self: flex-start; /* Alinea las secciones al inicio de la columna */
 
   }
 
@@ -436,11 +391,12 @@ h1 {
     max-width:   90%; /* La imagen nunca será más ancha que su contenedor */
     max-height:   90%; /* La imagen nunca será más alta que su contenedor */
     object-fit: contain; /* Asegura que la imagen se ajuste dentro de su contenedor manteniendo su relación de aspecto */
-    display: block; /* Asegura que la imagen se trate como un bloque */
+    display: flex; /* Asegura que la imagen se trate como un bloque */
     margin: auto; /* Centra la imagen horizontalmente */
     margin-top: 10px; 
     margin-bottom: 10px;
     border-radius: 5%;
+    flex-direction: column;
   }
     
 
@@ -448,17 +404,10 @@ h1 {
   .right-column {
     flex-grow:  1; /* Ocupa el espacio restante */
     background-color: #e0e0e0; /* Color de fondo para visualizar la columna */
+    display: flex; /* Establece la columna derecha como un contenedor Flexbox */
+  flex-direction: column; /* Organiza las secciones en una columna */
 }
 
-
-
-  .right-column .section-principal{
-    height:  20.00%; /* FALTA AJUSTAR SEGÚN QUEDEN LAS SECCIONES */
-    border-bottom:  1px solid #ccc;
-    padding: 5px;
-    border-left:  5px solid #007bff;
-    background-color:#7ade30 ;
-  }
   .right-column .section{
     /* height:  10.00%; FALTA AJUSTAR SEGÚN QUEDEN LAS SECCIONES */
     border-bottom:  1px solid #ccc;
@@ -477,6 +426,8 @@ h1 {
   .container-cv{
     display: flex;
     height:   100%;    
+    flex-direction: row; /* Organiza las columnas en una fila */
+  align-items: flex-start; /* Hace que las columnas se estiren para ocupar el mismo espacio vertical */
   }
 
   /* Adaptable (Responsivo) */
@@ -513,3 +464,49 @@ h1 {
       max-width: 600px;
     }
   }
+
+
+  /* Animaciones */
+@keyframes fadeIn {
+  from { opacity:  0; }
+  to { opacity:  1; }
+}
+
+.fadeIn {
+  animation: fadeIn  1s ease-in;
+}
+
+/* Transiciones suaves */
+.smooth-transition {
+  transition: all  0.3s ease;
+}
+
+
+/* Ajustes para las dos columnas con separación y colores diferenciados */
+.col-info {
+  padding:   20px;
+  flex:   1; /* Primera columna más angosta */
+  background-color: #f8f9fa; /* Color de fondo para la primera columna */
+  margin-right:  20px; /* Separación entre columnas */
+}
+
+.col-experiencia {
+  padding:   20px;
+  flex:   2; /* Segunda columna más ancha */
+  background-color: #e9ecef; /* Color de fondo para la segunda columna */
+}
+
+/* Ajustes para las tarjetas */
+.card {
+  margin-bottom:   20px;
+  box-shadow:   0   4px   8px   0 rgba(0,0,0,0.2);
+  transition:   0.3s;
+}
+
+.card:hover {
+  box-shadow:   0   8px   16px   0 rgba(0,0,0,0.2);
+}
+
+.card-body {
+  padding:   20px;
+}

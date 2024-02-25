@@ -1,35 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <!-- metadata -->
     <meta charset="utf-8">
     <meta name="author" content="Daira Álvarez">
-    <meta name="description" content="CV Daira Aketzalli Álvarez Solano">
+    <meta name="description" content="CV de Daira Aketzalli Álvarez Solano">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- title -->
-    <title>CV</title>
-    <!-- Favicon -->
+    <title>CV de Daira Álvarez</title>
     <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
-    <!-- Enlaza Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Iconos de Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <!-- CSS -->
     <link href="styles.css" rel="stylesheet">
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <!-- AQUÍ -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </head>
 
-<body class="cv-body">
+<body>
+    <!-- Barra de navegacion -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">Redes de Datos Seguras</a>
@@ -52,57 +42,114 @@
             </div>
         </div>
     </nav>
-    <div class="CV">
-        <div class="container-cv">
-            <div class="left-column">
-                <div class="section"><img src="../img/yo.jpg" alt="Daira Aketzalli Alvarez Solano"></div>
-                <div class="section">
-                    <i class="bi bi-telephone-fill"> </i>
-                    <span> +52 55 6750 6514</span>
+
+    <section class="hero align-items-stretch">
+        <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+            <img class="hero-imagen-desarrollador rounded-square" src="img/yo.jpg" alt="Foto de Daira Álvarez">
+            <h1>Daira Aketzalli Álvarez Solano <br>Estudiante de Ingeniería en Computación</h1>
+            <h2 class="text-primary mb-4" id="typewriter"></h2>
+        </div>
+    </section>
+
+    <!-- Contenedor Principal -->
+    <div class="container">
+
+        <!-- Secciones del CV en dos columnas -->
+        <div class="row">
+            <div class="col-info">
+
+                <div id="datos-personales" class="seccion">
+                    <h2>Datos Personales</h2>
+                    <p>
+                        <i class="bi bi-geo-alt medium-icon"></i> <!-- Símbolo de localización -->
+                        Calle Ejemplo 123, Ciudad, País
+                    </p>
+                    <p>
+                        <i class="bi bi-telephone medium-icon"></i> <!-- Símbolo de teléfono -->
+                        +1 (123) 456-7890
+                    </p>
+                    <p>
+
+                        <i class="bi bi-envelope medium-icon"></i> <!-- Símbolo de correo electrónico -->
+                        ejemplo@dominio.com
+                    </p>
+                    <p>
+                        
+                        <a href="https://www.linkedin.com/in/tu-perfil" target="_blank"><i class="bi bi-linkedin medium-icon"></i> <!-- Símbolo de LinkedIn --></a>
+                    </p>
+                    <!-- Puedes agregar más elementos de la lista según sea necesario -->
+
                 </div>
-                <div class="section"> <i class="bi bi-envelope-fill"> </i>
-                    <span class="text-span-space">alvarez.daira.99@gmail.com</span>
+                <div id="habilidades" class="seccion">
+                    <h2>Habilidades</h2>
+                    <ul>
+                        <li>Habilidad 1</li>
+                        <li>Habilidad 2</li>
+                        <!-- Agrega más habilidades según sea necesario -->
+                    </ul>
                 </div>
-                <!-- FALTA AGREGAR LINK A PORTAFOLIOS -->
-                <div class="section"> <a href="https://www.linkedin.com/in/daira-aketzalli/" target="_blank">
-                        <i class="bi bi-linkedin medium-icon"></i>
-                    </a>
-                    <a href="https://github.com/DairaA-AlvarezSolano" target="_blank">
-                        <i class="bi bi-github medium-icon"></i>
-                    </a>
-                </div>
-                <div class="section"><i class="bi bi-geo-alt-fill"> </i>
-                    <span class="text-span-space">Ciudad de México</span></div>
-                <!-- <div class="section">Contenido de la sección 3</div>
-                <div class="section">Contenido de la sección 3</div>
-                <div class="section">Contenido de la sección 3</div>
-                <div class="section">Contenido de la sección 3</div> -->
+
+
             </div>
 
-            <div class="right-column">
-                <!-- Aquí va el contenido de la columna derecha -->
-                <div class="section-principal">
-                    <h4>Daira Aketzalli Álvarez Solano</h4>
-                    <h5>Estudiante de Ingeniería en Computación</h5>
+            <div class="col-experiencia">
+
+                <div id="perfil" class="seccion">
+                    <h2>Perfil</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <p>
+                                Estudiante de ingeniería en computación con habilidades de
+                                adaptación a entornos diversos. Mi capacidad para combinar
+                                habilidades técnicas con una sensibilidad hacia las dinámicas
+                                Sociales me permite ofrecer perspectivas frescas e integrales en
+                                proyectos multidisciplinarios.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="section">
-                    <h5>Perfil</h5>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus libero totam quae quam vero exercitationem, deserunt, nemo dicta quos, laborum incidunt inventore iste hic fuga facilis dolor nisi temporibus sequi.
-                        Ut quibusdam itaque dicta ipsam. Quo doloribus asperiores beatae ipsa dolor dolores. Error quibusdam et deserunt reiciendis enim, neque autem quos dolorem obcaecati distinctio voluptate commodi laborum doloribus deleniti quia.
-                        Sed voluptatibus reiciendis sint deleniti nesciunt dignissimos molestias provident, voluptatum velit tenetur facilis? Veritatis error blanditiis quisquam dolor, delectus odit. Velit voluptatibus nemo iusto ratione recusandae itaque quasi animi eos?
-                    </p>
+                <div id="experiencia" class="seccion">
+                    <h2>Experiencia Profesional</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Puesto 1</h3>
+                            <p class="card-text">Nombre de la empresa 1, Fechas</p>
+                            <ul>
+                                <li>Descripción de las responsabilidades y logros en el puesto 1.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Puesto 2</h3>
+                            <p class="card-text">Nombre de la empresa 2, Fechas</p>
+                            <ul>
+                                <li>Descripción de las responsabilidades y logros en el puesto 2.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Repite el div anterior para cada puesto de trabajo adicional -->
                 </div>
-                <div class="section">
-                    <h5>Estudiante de Ingeniería en Computación</h5>
+
+                <div id="formacion" class="seccion">
+                    <h2>Formación Académica</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Título</h3>
+                            <p class="card-text">Institución, Fechas</p>
+                        </div>
+                    </div>
+                    <!-- Repite el div anterior para cada título o formación académica -->
                 </div>
-                <div class="section">
-                    <h5>Estudiante de Ingeniería en Computación</h5>
-                </div>
-                
             </div>
         </div>
     </div>
+
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <p class="footer-texto text-center">Fake it till you make it.</p>
+    </footer>
+
+
 </body>
 
 </html>
