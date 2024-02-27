@@ -63,6 +63,7 @@ section {
   font-optical-sizing: auto;
   font-weight: 350;
   font-style: normal;
+  color: #CBB7AE !important;
 }
 
 .jumbotron{
@@ -127,17 +128,21 @@ h1 {
   }
   
   .seccion-titulo {
-    font-size: 2rem;
+    font-size: 30px;
     padding: 15px 0;
     font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 350;
+  font-weight: 500;
   font-style: normal;
   }
   
   .seccion-descripcion {
     font-size: 1.2rem;
     color: #584e4e;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
   }
   
   .seccion-texto {
@@ -258,7 +263,7 @@ h1 {
   }
   
   .badges-contenedor {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     margin: 10px 0;
   }
@@ -299,7 +304,7 @@ h1 {
   }
   
   .libros .carousel {
-    max-width: 800px;
+    max-width: 500px;
   }
   
   .carousel-item {
@@ -322,6 +327,7 @@ h1 {
     height: 50px;
     margin-top: 170px;
     max-width: max-content;
+    background-color: #D1B6B7;
   }
 
   .gustos-imagen {
