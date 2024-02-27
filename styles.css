@@ -7,7 +7,7 @@ body {
 
 /* BARRA DE NAVEGACIÓN */
 .navbar {
-  background: linear-gradient(to right, #000000, #434343);
+  background: linear-gradient(to right, #565263, #A6808B);
 }
 
 /* Cambiar el color del texto y los enlaces */
@@ -55,38 +55,60 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    
   }
 
-.jumbotron {
+  .text-primary {
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+}
+
+.jumbotron{
     /* margin-top: 50px; */
-    background-color: #007bff; /* Color de fondo para el encabezado */
+    background-color: #565263; /* Color de fondo para el encabezado */
     margin-bottom:   0; /* Sin margen inferior para el encabezado */
     margin-left: 205px;
     margin-right: 205px;
 }
 
 .content-section {
+  background-color: #d6cfca95;
     margin-bottom:   2rem; /* Espaciado entre secciones */
     border-radius:   1rem; /* Bordes redondeados */
     box-shadow:   0   0.5rem   1rem rgba(0,   0,   0,   0.15); /* Sombra para dar profundidad */
     transition: transform   0.3s ease-in-out; /* Transición suave al pasar el cursor */
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      text-align: justify;
 }
 
 .content-section:hover {
+  
     transform: translateY(-0.25rem); /* Efecto de elevación al pasar el cursor */
 }
 
 .my-5 {
+  
     margin-top:   3rem !important; /* Espaciado superior para el contenido principal */
     margin-bottom:   3rem !important; /* Espaciado inferior para el contenido principal */
 }
 
 /* Estilos adicionales para mejorar la apariencia y funcionalidad */
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     /* FALTA ESCOGER FUENTE */
-    font-family: 'Rubik Dirt', cursive;
+    font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
   }
+
 
   h4 {
     font-size: 1.5rem;
@@ -96,7 +118,7 @@ h1 {
   }
   .seccion-oscura {
     color: white;
-    background-color: #1b1b32;
+    background-color: #706677;
   }
   
   .seccion-clara {
@@ -107,7 +129,10 @@ h1 {
   .seccion-titulo {
     font-size: 2rem;
     padding: 15px 0;
-    font-family: 'Rubik Dirt', cursive;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
   }
   
   .seccion-descripcion {
@@ -117,6 +142,10 @@ h1 {
   
   .seccion-texto {
     font-size: 1.2rem;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
   }
   
   .btn-info {
@@ -173,7 +202,7 @@ h1 {
   /* Sobre mi */
   
   .sobre-mi {
-    height: 500px;
+    height: 400px;
     padding: 10px;
   }
   
@@ -182,6 +211,13 @@ h1 {
     text-align: center;
   }
   
+  .info-texto{
+    font-size: 1.1rem;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+  }
   /* Experiencia */
   
   .experiencia {
@@ -200,13 +236,13 @@ h1 {
   
   .experiencia .columna:hover {
     color: white;
-    background-color: #1b1b32;
+    background-color: #D1B6B7;
   }
   
   .experiencia i {
     font-size: 2.5rem;
-    color: #7ade30;
-    background-color: #0a0a23;
+    color: #A6808B;
+    background-color: #D1B6B7;
     padding: 8px 19px;
     border-radius: 50%;
   }
@@ -215,6 +251,10 @@ h1 {
     font-size: 25px;
     font-weight: bold;
     margin: 10px 0;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:500;
+  font-style: normal;
   }
   
   .badges-contenedor {
@@ -228,9 +268,24 @@ h1 {
   }
   /* FALTA CAMBIAR COLOR DE BOTONES */
   .text-bg-primary {
-    background-color: #007bff; /* Cambia este valor al color que desees */
+    background-color: #A6808B; /* Cambia este valor al color que desees */
     color: #fff; /* Cambia este valor al color del texto que desees */
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
 }
+
+.bg-primary{
+  background-color: black;
+}
+
+.table tbody tr td:hover {
+  background-color: #D1D119; /* Cambia el color según prefieras */
+  box-shadow:  0px  2px  4px rgba(0,  0,  0,  0.2); /* Añade sombra con color negro y  20% de transparencia */
+
+}
+
 
 .medium-icon {
   font-size:  1.2em; /* Ajusta este valor para cambiar el tamaño del icono */
@@ -286,6 +341,10 @@ h1 {
   .gustos-info {
     font-weight: bold;
     text-align: center;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 
   }
   

@@ -21,6 +21,10 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
 
     <!-- AQUÍ -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -33,20 +37,20 @@
     <!-- Barra de navegacion -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Redes de Datos Seguras</a>
+            <a class="navbar-brand" href="index.html">Secure Data Networks</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="personal.html"><i class="bi bi-person-fill"></i> Página personal</a>
+                        <a class="nav-link" href="personal.html"><i class="bi bi-person-fill"></i> Personal page</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="CV.html"><i class="bi bi-file-earmark-text-fill"></i> CV</a>
+                        <a class="nav-link" href="CV.html"><i class="bi bi-file-earmark-text-fill"></i> CV </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pagina3.html"><i class="bi bi-calendar-fill"></i> Horario escolar</a>
+                        <a class="nav-link" href="schedule.html"><i class="bi bi-calendar-fill"></i> Schedule</a>
                     </li>
                 </ul>
             </div>
@@ -82,9 +86,9 @@
             <div class="row">
                 <!-- Hobbies -->
                 <div class="columna col-12 col-md-4">
-                    <i class="bi bi-laptop"></i>
+                    <i class="bi bi-emoji-laughing-fill"></i>
                     <p class="experiencia-titulo">Hobbies</p>
-                    <p>Aunque no tengo muchos hobbies constantes, me gusta mantenerme abierta a nuevas experiencias y
+                    <p class="info-texto">Aunque no tengo muchos hobbies constantes, me gusta mantenerme abierta a nuevas experiencias y
                         actividades. Me agrada la diversidad y la oportunidad de aprender algo nuevo cada día. Aunque no
                         me comprometo con un solo hobby, me gusta explorar diferentes caminos y ver qué me atrae. </p>
                     <div class="badges-contenedor">
@@ -97,9 +101,9 @@
                 </div>
                 <!-- Películas -->
                 <div class="columna col-12 col-md-4">
-                    <i class="bi bi-laptop"></i>
+                    <i class="bi bi-film"></i>
                     <p class="experiencia-titulo">Películas</p>
-                    <p>No me gusta limitarme a un solo género, en cambio, disfruto descubriendo nuevas películas sin
+                    <p class="info-texto">No me gusta limitarme a un solo género, en cambio, disfruto descubriendo nuevas películas sin
                         tener en cuenta su clasificación. Si el trailer de una película me atrae, es probable que decida
                         verla. Una excepción a esta regla es Disney, me gusta ver sus
                         películas sin importar la trama.</p>
@@ -110,9 +114,9 @@
                 </div>
                 <!-- Música -->
                 <div class="columna col-12 col-md-4">
-                    <i class="bi bi-laptop"></i>
+                    <i class="bi bi-music-note"></i>
                     <p class="experiencia-titulo">Música</p>
-                    <p>Me apasiona la música pop en inglés y alternativa, me transportan a diferentes mundos y momentos.
+                    <p class="info-texto">Me apasiona la música pop en inglés y alternativa, me transportan a diferentes mundos y momentos.
                         Cada canción o álbum que descubro me ofrece una nueva perspectiva y me conecta con emociones
                         humanas diversas. En la imagen superior, verás a unos de mis artistas favoritos que han
                         impactado significativamente en mi crecimiento.</p>
@@ -121,6 +125,7 @@
                         <span class="badge text-bg-primary">Alec Benjamin</span>
                         <span class="badge text-bg-primary">AgustD</span>
                         <span class="badge text-bg-primary">Coldplay</span>
+                        <span class="badge text-bg-primary">BTS</span>
                     </div>
                 </div>
             </div>
@@ -139,7 +144,7 @@
                 <div class="carousel-item active">
                     <div class="container">
                         <img class="gustos-imagen rounded-circle" src="../img/almendra.png" alt="Almendra">
-                        <p class="gustos-texto">Yunjae nació con alexitimia, una condición que le dificulta reconocer y
+                        <p class="info-texto">Yunjae nació con alexitimia, una condición que le dificulta reconocer y
                             expresar emociones debido al desarrollo limitado de su amígdala cerebral. A pesar de los
                             esfuerzos de su madre y abuela, sufre intimidación en la escuela. Tras un trágico ataque
                             callejero en su decimosexto cumpleaños, su abuela fallece y su madre queda en estado
@@ -154,7 +159,7 @@
                     <div class="container">
                         <img class="gustos-imagen rounded-circle" src="../img/bibliotecamedianoche.png"
                             alt="Biblioteca de la media noche">
-                        <p class="gustos-texto">
+                        <p class="info-texto">
                             Nora Seed encuentra una Biblioteca de la Medianoche con estantes infinitos entre la vida y
                             la muerte. Se le ofrece la oportunidad de vivir diferentes vidas y corregir sus elecciones.
                             Marcada por la infelicidad y el arrepentimiento, busca la vida perfecta con la ayuda de una
@@ -171,7 +176,7 @@
                     <div class="container">
                         <img class="gustos-imagen rounded-circle" src="../img/libranosdelmal.jpg"
                             alt="Líbranos del mal">
-                        <p class="gustos-texto">La dualidad del bien y el mal, similar al yin y yang, se refleja en la
+                        <p class="info-texto">La dualidad del bien y el mal, similar al yin y yang, se refleja en la
                             vida de un estudiante de último año de preparatoria. Aunque aparenta ser común, oculta
                             encuentros esporádicos con sombras y susurros que, inicialmente olvidables, toman
                             relevancia. La búsqueda de consuelo y respuestas se intensifica cuando el mal se acerca,
@@ -186,7 +191,7 @@
                     <div class="container">
                         <img class="gustos-imagen rounded-circle" src="../img/jardindelasmariposas.png"
                             alt="Jardin de las mariposas">
-                        <p class="gustos-texto">
+                        <p class="info-texto">
                             Cerca de una mansión aislada, un jardín alberga una colección de mariposas resguardada por
                             el obsesionado Jardinero. Maya, una sobreviviente, enfrenta el trauma al relatar a los
                             agentes del FBI los horrores vividos junto a otras jóvenes cautivas. Las pesadillas
