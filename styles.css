@@ -168,7 +168,13 @@ h1 {
 
   .seccion{
     text-align: justify;
-    margin-bottom: 50px ;
+    margin-bottom: 70px ;
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
   }
 
   /* Seccion Hero */
@@ -293,10 +299,23 @@ h1 {
 
 
 .medium-icon {
-  font-size:  1.2em; /* Ajusta este valor para cambiar el tamaño del icono */
+  font-size:  1.5em; /* Ajusta este valor para cambiar el tamaño del icono */
   color: black;
+  padding-right: 25px;
 }
 
+.big-icon {
+  font-size:  2.0em; /* Ajusta este valor para cambiar el tamaño del icono */
+  color: black;
+  padding-right: 25px;
+}
+
+.seccion .icon-p {
+  display: flex;
+  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: center; /* Centra horizontalmente los elementos */
+  text-align: center; /* Asegura que el texto esté centrado si los íconos no ocupan todo el espacio */
+}
   /* libros */
   
   .libros {
@@ -374,7 +393,8 @@ h1 {
   /* Pie de pagina (footer) */
   
   footer {
-    min-height: 100px;
+    min-height: 50px;
+    background: linear-gradient(to left, #565263, #A6808B);
   }
   
   .footer-logo {
@@ -481,6 +501,16 @@ h1 {
     background-color:#7ade30 ;
   }
 
+
+  .ocupacion-h{
+    font-size: 1.6rem;
+    /* FALTA ESCOGER FUENTE */
+    font-family: "Roboto Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  }
+
   .section span{
     margin-left: 8px;
   }
@@ -551,14 +581,14 @@ h1 {
 .col-info {
   padding:   20px;
   flex:   1; /* Primera columna más angosta */
-  background-color: #f8f9fa; /* Color de fondo para la primera columna */
+  background-color: #D1B6B7; /* Color de fondo para la primera columna */
   margin-right:  20px; /* Separación entre columnas */
 }
 
 .col-experiencia {
   padding:   20px;
   flex:   2; /* Segunda columna más ancha */
-  background-color: #e9ecef; /* Color de fondo para la segunda columna */
+  background-color: #D6CFCA; /* Color de fondo para la segunda columna */
 }
 
 /* Ajustes para las tarjetas */
