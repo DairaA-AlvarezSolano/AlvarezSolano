@@ -51,39 +51,39 @@
     <section class="experiencia seccion-clara">
         <div class="container text-center">
             <h2 class="seccion-titulo">Tabla de Ejemplo</h2>
-            <div style="overflow-x:auto;">
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>Columna 1</th>
-                            <th>Columna 2</th>
-                            <th>Columna 3</th>
-                            <th>Columna 4</th>
-                            <th>Columna 5</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Repite este bloque para las demás filas hasta llegar a  10 -->
-                        <tr>
-                            <td>Dato 1.1</td>
-                            <td>Dato 1.2</td>
-                            <td>Dato 1.3</td>
-                            <td>Dato 1.4</td>
-                            <td>Dato 1.5</td>
-                        </tr>
-                        <!-- ... -->
-                        <tr>
-                            <td>Dato 10.1</td>
-                            <td>Dato 10.2</td>
-                            <td>Dato 10.3</td>
-                            <td>Dato 10.4</td>
-                            <td>Dato 10.5</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Columna 1</th>
+                        <th scope="col">Columna 2</th>
+                        <th scope="col">Columna 3</th>
+                        <th scope="col">Columna 4</th>
+                        <th scope="col">Columna 5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Repite este bloque para las demás filas hasta llegar a 10 -->
+                    <tr>
+                        <th scope="row">Dato 1.1</th>
+                        <td>Dato 1.2</td>
+                        <td>Dato 1.3</td>
+                        <td>Dato 1.4</td>
+                        <td>Dato 1.5</td>
+                    </tr>
+                    <!-- ... -->
+                    <tr>
+                        <th scope="row">Dato 10.1</th>
+                        <td>Dato 10.2</td>
+                        <td>Dato 10.3</td>
+                        <td>Dato 10.4</td>
+                        <td>Dato 10.5</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
+    
+    
 
 
     <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
