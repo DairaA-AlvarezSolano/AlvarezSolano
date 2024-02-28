@@ -290,9 +290,12 @@ h1 {
 .bg-primary{
   background-color: black;
 }
+.table {
+  border-collapse: collapse; /* Elimina el espacio entre las celdas */
+}
 
 .table tbody tr td:hover {
-  background-color: #D1D119; /* Cambia el color según prefieras */
+  background-color: #CBB7AE; /* Cambia el color según prefieras */
   box-shadow:  0px  2px  4px rgba(0,  0,  0,  0.2); /* Añade sombra con color negro y  20% de transparencia */
 
 }
@@ -444,12 +447,12 @@ h1 {
     padding: 20px;
   }
 
-  .cv-body{
+  /* .cv-body{
     background-color: yellow;
     padding-left:10rem;
     padding-right:10rem;
 
-  }
+  } */
 
   /* AQUÍ ESTOY HACIENDO PRUEBAS */
   .left-column{
@@ -486,20 +489,19 @@ h1 {
     
 
 
-  .right-column {
-    flex-grow:  1; /* Ocupa el espacio restante */
-    background-color: #e0e0e0; /* Color de fondo para visualizar la columna */
-    display: flex; /* Establece la columna derecha como un contenedor Flexbox */
-  flex-direction: column; /* Organiza las secciones en una columna */
+  /* .right-column {
+    flex-grow:  1; /* Ocupa el espacio restante 
+    background-color: #e0e0e0; /* Color de fondo para visualizar la columna 
+    display: flex; /* Establece la columna derecha como un contenedor Flexbox 
+  flex-direction: column; /* Organiza las secciones en una columna 
 }
 
   .right-column .section{
-    /* height:  10.00%; FALTA AJUSTAR SEGÚN QUEDEN LAS SECCIONES */
     border-bottom:  1px solid #ccc;
     padding: 5px;
     border-left:  5px solid #007bff;
     background-color:#7ade30 ;
-  }
+  } */
 
 
   .ocupacion-h{
