@@ -291,9 +291,20 @@ h1 {
   background-color: black;
 }
 .table {
+  table-layout: fixed;
   border-collapse: collapse; /* Elimina el espacio entre las celdas */
+  width: 100%;
+  font-size: 0.9em;
+  border: 10px solid #D1B6B7;
 }
 
+th, td {
+  text-align: center;
+  padding: 5px;
+  border: 2px solid #ddd;
+ }
+
+ 
 .table tbody tr td:hover {
   background-color: #CBB7AE; /* Cambia el color según prefieras */
   box-shadow:  0px  2px  4px rgba(0,  0,  0,  0.2); /* Añade sombra con color negro y  20% de transparencia */
@@ -533,7 +544,6 @@ h1 {
     .overlay p {
       font-size: 18px;
     }
-  
     .overlay i {
       font-size: 40px;
     }
@@ -610,34 +620,53 @@ h1 {
 
 
 @media only screen and (max-width: 760px) {
-  table, thead, tbody, th, td, tr {
+  /* Establecer la tabla para que se comporte como un bloque en dispositivos móviles */
+  table {
     display: block;
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: auto;
   }
-  thead tr {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
+
+  /* Ocultar las filas de encabezado visualmente */
+  thead {
+    display: none;
   }
+
+  /* Establecer estilos para cada fila */
   tr {
+    margin-bottom: 10px;
+    display: block;
     border: 1px solid #ccc;
   }
+
+  /* Establecer estilos para las celdas */
   td {
+    display: block;
+    text-align: left;
     border: none;
     border-bottom: 1px solid #eee;
     position: relative;
     padding-left: 50%;
+    box-sizing: border-box;
   }
+
+  /* Crear un espacio para el contenido de la celda */
   td:before {
+    content: "";
     position: absolute;
     top: 6px;
     left: 6px;
     width: 45%;
     padding-right: 10px;
     white-space: nowrap;
+    box-sizing: border-box;
   }
-  td:nth-of-type(1):before { content: "Columna 1"; }
-  td:nth-of-type(2):before { content: "Columna 2"; }
-  td:nth-of-type(3):before { content: "Columna 3"; }
-  td:nth-of-type(4):before { content: "Columna 4"; }
-  td:nth-of-type(5):before { content: "Columna 5"; }
+
+  /* Asignar contenido específico para cada celda */
+  td:nth-of-type(1):before { content: "Monday"; }
+  td:nth-of-type(2):before { content: "Tuesday"; }
+  td:nth-of-type(3):before { content: "Wednesday"; }
+  td:nth-of-type(4):before { content: "Thursday"; }
+  td:nth-of-type(5):before { content: "Friday"; }
 }
